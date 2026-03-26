@@ -76,12 +76,12 @@ Para saber cuanto se tarda cada algoritmo en recorrer el arbol sintactico vamos 
 <img width="573" height="443" alt="image" src="https://github.com/user-attachments/assets/41977967-107f-4192-babf-d825e957555a" />
 <br>
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Tarea 3 (Asociatividad y Precedencia)
-Para este punto use una gramatica basica que define numero, suma, resta, multiplicacion y division.<br>
+Para este punto use una gramatica basica que define numero, parentesis, suma, resta, multiplicacion y division.<br>
 <img width="403" height="74" alt="image" src="https://github.com/user-attachments/assets/31d1a585-c012-4694-929b-747c5d5f54c6" /><br><br>
-Se cree 3 parser para cada uno de los casos
+Cree 3 parser para cada uno de los casos
 #### 1. Asociatividad izquierda (el normalito)
 Evalúa de izquierda a derecha<br>
 <img width="275" height="545" alt="image" src="https://github.com/user-attachments/assets/79d3d365-896b-4895-950a-59ea4d9636fa" />
@@ -95,3 +95,5 @@ Evalúa de derecha a izquierda<br>
 #### 3. Precedencia invertida
 `+` tiene mayor prioridad que `*`<br>
 <img width="425" height="643" alt="Captura de pantalla 2026-03-26 104804" src="https://github.com/user-attachments/assets/78f9f9c5-51db-4a79-90bf-140fa646c60e" />
+
+--------------------------------------------------------------------------------------------------------------------------------
