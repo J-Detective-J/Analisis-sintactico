@@ -8,4 +8,4 @@ Con instrucciones para instalar en
 <br>`sudo apt install graphviz -y`<br>
 
 ## Para la ejecucion
-Simplemente ejecutar el archivo `.py`, la entrada dadas en los ejemplos estan en `entrada.txt` y es un archivo modificable para pruebas.
+Simplemente ejecutar el archivo `.py`, la entrada fue la dada en los ejemplos y estan en `entrada.txt` (archivo modificable para pruebas).
