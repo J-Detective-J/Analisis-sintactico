@@ -6,7 +6,7 @@ Casos de asociatividad
 400 / 4 / 5 / 2
 
 
--------( Obviamente estos simbolos dan error pero lo uso como divisor para los ejemplos, ignoralos :) )----------
+-----------------
 
 Casos de precedencia
 
@@ -18,7 +18,7 @@ Casos de precedencia
 9 * 3 + 4 * 2
 
 
----------------------------------------------------------------------------------------------
+------------------
 
 Casos con parentesis
 
