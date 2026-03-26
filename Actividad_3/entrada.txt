@@ -1,3 +1,5 @@
+(Se que da error, pero simplemente se omite y se leen las cadenas que son correctas)
+
 Casos de asociatividad
 
 100 - 10 - 10 - 10 - 10
