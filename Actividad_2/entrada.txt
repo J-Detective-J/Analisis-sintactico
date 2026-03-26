@@ -1,3 +1,19 @@
-2+3*4
-2+3-4
-2+3*(4-5)
+Casos con operadores
+
+a + b * c
+a * b + c
+x + y * z + w
+10 + 20 * 30
+100 / 5 + 2
+a * b - c * d
+
+
+
+Casos con paréntesis
+
+(a + b) * c
+a * (b + c)
+(x + y) * (z + w)
+(10 + 20) * 3
+( a + b ) * ( c - d )
+((a))
