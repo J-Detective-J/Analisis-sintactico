@@ -16,6 +16,8 @@ Descargar y ejecutar el `.exe` en su pagina web `https://graphviz.org/download/`
 Luego ejecuta en Powershell o Cmd el siguiente comando `pip install graphviz`<br>
 ## Para la ejecucion
 Simplemente ejecutar el archivo `.py`, la entrada fue la dada en los ejemplos y estan en `entrada.txt` (archivo modificable para pruebas).
+# ¡Aviso!
+# Deje muchos ejemplos en ```entrada.txt```, recomiendo usar los ejemplos poco a poco en las actividades 1 y 2 para que no se creen demasiadas imagenes.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
