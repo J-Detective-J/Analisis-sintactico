@@ -34,9 +34,9 @@ F->pari E pard
 ```
 La modifique para adaptarse a codigo de python
 ```
-E → T ( ( + | - ) T )*
-T → F ( ( * | / ) F )*
-F → num | id | ( E )
+E -> T ( ( + | - ) T )*
+T -> F ( ( * | / ) F )*
+F -> num | id | ( E )
 ```
 <img width="264" height="233" alt="image" src="https://github.com/user-attachments/assets/3cdfbed4-f29b-4a88-83d6-b97a0833d38f" /><br>
 ------------------------------------------------------------------------------------------------------------------------------------
@@ -73,9 +73,25 @@ Este algoritmo combina subcadenas y llena la tabla dinámicamente, por esta razo
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Medicion de tiempos
 Para saber cuanto se tarda cada algoritmo en recorrer el arbol sintactico vamos a utilizar `time.perf_counter()`<br>
-<img width="653" height="443" alt="image" src="https://github.com/user-attachments/assets/5a0bff88-73d6-47d8-9fc1-11be1b2cddb2" /><br>
+<img width="573" height="443" alt="image" src="https://github.com/user-attachments/assets/41977967-107f-4192-babf-d825e957555a" />
+<br>
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Tarea 3 (Asociatividad y Precedencia)
+Para este punto use una gramatica basica que define numero, suma, resta, multiplicacion y division.<br>
+<img width="403" height="74" alt="image" src="https://github.com/user-attachments/assets/31d1a585-c012-4694-929b-747c5d5f54c6" /><br><br>
+Se cree 3 parser para cada uno de los casos
+#### 1. Asociatividad izquierda (el normalito)
+Evalúa de izquierda a derecha<br>
+<img width="275" height="545" alt="image" src="https://github.com/user-attachments/assets/79d3d365-896b-4895-950a-59ea4d9636fa" />
+<br><br>
 
+#### 2. Asociatividad derecha
+Evalúa de derecha a izquierda<br>
+<img width="654" height="563" alt="image" src="https://github.com/user-attachments/assets/7df385bb-0b73-4065-bc41-d7aa9afbf56a" />
+<br><br>
+
+#### 3. Precedencia invertida
+`+` tiene mayor prioridad que `*`<br>
+<img width="425" height="643" alt="Captura de pantalla 2026-03-26 104804" src="https://github.com/user-attachments/assets/78f9f9c5-51db-4a79-90bf-140fa646c60e" />
