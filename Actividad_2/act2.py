@@ -138,7 +138,7 @@ def cyk_trace(tokens):
     table = [[set() for _ in range(n)] for _ in range(n)]
     trace = []
 
-    # Inicialización
+    # Inicializacion
     for i in range(n):
         for lhs, rules in grammar.items():
             for rule in rules:
@@ -202,7 +202,7 @@ def process_file():
 
         tokens = tokenize(expr)
 
-        # ---- LL(1) ----
+        # ---- LL ----
         start_ll = time.perf_counter()
         parser = Parser(tokens)
         tree = parser.E()
@@ -215,14 +215,14 @@ def process_file():
 
         # ---- Recorrido LL ----
         dot_trav = graph_traversal(tree)
-        dot_trav.render(f"recorrido_LL_{contador}", format="png", cleanup=True)
+        dot_trav.render(f"LL-cadena_{contador}", format="png", cleanup=True)
 
         # ---- Grafo CYK ----
         dot_cyk = graph_cyk(trace)
-        dot_cyk.render(f"recorrido_CYK_{contador}", format="png", cleanup=True)
+        dot_cyk.render(f"CYK-cadena_{contador}", format="png", cleanup=True)
 
         # ---- Resultados ----
-        print(f"LL(1): {(end_ll - start_ll):.6f} s")
+        print(f"LL: {(end_ll - start_ll):.6f} s")
         print(f"CYK:   {(end_cyk - start_cyk):.6f} s")
    
 
