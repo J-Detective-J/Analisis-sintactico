@@ -77,5 +77,5 @@ Para saber cuanto se tarda cada algoritmo en recorrer el arbol sintactico vamos 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Tarea 3 (Asociatividad y Presedencia)
+## Tarea 3 (Asociatividad y Precedencia)
 
