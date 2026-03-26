@@ -38,7 +38,7 @@ class Node:
 
 
 
-# Parser descendente
+# Parser
 
 class Parser:
     def __init__(self, tokens):
@@ -127,13 +127,11 @@ def build_graph(node, dot=None, parent=None, counter=None):
 
 # Procesar archivo
 
-
-
 def process_file():
     with open("entrada.txt", 'r') as f:
         lines = f.readlines()
     
-    contador = 1  # índice limpio
+    contador = 1 
     
     for line in lines:
         expr = line.strip()
@@ -148,7 +146,7 @@ def process_file():
         tree = parser.E()
         
         dot = build_graph(tree)
-        dot.render(f"arbol_{contador}", format="png", cleanup=True)
+        dot.render(f"arbol-cadena_{contador}", format="png", cleanup=True)
         
         contador += 1
 
