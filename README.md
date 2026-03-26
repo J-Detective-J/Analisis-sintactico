@@ -67,7 +67,7 @@ pero lo mas importante es como recorre el arbol sintactico:<br>
 implemente un recorrido DFS que enumera cada nodo en orden de visita, esto permite ver como el parser recorrio la expresion
 
 ### Algoritmo CYK
-Este algoritmo combina subcadenas y llena la tabla dinámicamente, por esta razon no se puede graficar su recorrido en forma de arbol y esto lo registre asi:<br><br> `(i, j, símbolo, dependencias)`<br>
+Este algoritmo combina subcadenas y llena la tabla dinámicamente, por esta razon no se puede graficar su recorrido en forma de arbol y esto lo registre asi:<br> `(i, j, símbolo, dependencias)`<br><br>
 <img width="626" height="796" alt="image" src="https://github.com/user-attachments/assets/f218a835-60ee-4cea-bf5e-87a3062f16e2" /><br>
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
