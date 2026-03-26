@@ -202,26 +202,26 @@ def process_file():
 
         tokens = tokenize(expr)
 
-        # ---- LL ----
+        # LL 
         start_ll = time.perf_counter()
         parser = Parser(tokens)
         tree = parser.E()
         end_ll = time.perf_counter()
 
-        # ---- CYK ----
+        #  CYK 
         start_cyk = time.perf_counter()
         result_cyk, trace = cyk_trace(tokens)
         end_cyk = time.perf_counter()
 
-        # ---- Recorrido LL ----
+        # Recorrido LL 
         dot_trav = graph_traversal(tree)
         dot_trav.render(f"LL-cadena_{contador}", format="png", cleanup=True)
 
-        # ---- Grafo CYK ----
+        # Grafo CYK 
         dot_cyk = graph_cyk(trace)
         dot_cyk.render(f"CYK-cadena_{contador}", format="png", cleanup=True)
 
-        # ---- Resultados ----
+        # Resultados
         print(f"LL: {(end_ll - start_ll):.6f} s")
         print(f"CYK:   {(end_cyk - start_cyk):.6f} s")
    
